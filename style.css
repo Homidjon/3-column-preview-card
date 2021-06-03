@@ -1,0 +1,102 @@
+            /*font-family: 'Lexend Deca', sans-serif;*/
+            /*font-family: 'Big Shoulders Display', cursive;*/
+
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    flex-basis: 1440px;
+}
+.boxes {
+    display: flex;
+    flex-wrap:nowrap;
+    flex-basis: 900px;
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.parts {
+    padding: 45px;
+    display: block;
+}
+.part1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.part2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.part3{
+    background-color: hsl(179, 100%, 13%);
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 30px;
+    width: 140px;
+    height: 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+.part1 button {
+    color: hsl(31, 77%, 52%);
+}
+.part2 button {
+    color: hsl(184, 100%, 22%);
+}
+.part3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+button:active {
+    border: 2px solid white;
+    color: white;
+}
+.part1 button:active {
+    background-color: hsl(31, 77%, 52%);
+}
+.part2 button:active {
+    background-color: hsl(184, 100%, 22%);
+}
+.part3 button:active {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+@media (max-width: 767px) {
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 330px;
+    }
+    .part1 {
+        order: 1;
+    }
+    .part2 {
+        order: 2;
+    }
+    .part3 {
+        order: 3;
+    }
+}
